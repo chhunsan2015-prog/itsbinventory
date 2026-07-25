@@ -1,0 +1,6 @@
+{
+  "name": "Tax Stock Management System",
+  "description": "ប្រព័ន្ធគ្រប់គ្រងស្តុកសម្ភារៈពន្ធដារ - ថ្នាក់កណ្តាល និងសាខាខេត្ត/ខណ្ឌ (Tax Stock Management System)",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
