@@ -238,11 +238,14 @@ export default function App() {
             >
               <Menu className="w-5 h-5 sm:w-6 sm:h-6" />
             </button>
-            <div className="bg-white/10 p-1.5 rounded-xl border border-white/20 shadow-xs flex-shrink-0 flex items-center justify-center">
+            <div className="bg-white p-1 sm:p-1.5 rounded-xl shadow-md border border-white/40 flex-shrink-0 flex items-center justify-center">
               <img 
                 src="/Logo_Stock_2.png" 
-                alt="Logo_Stock_2" 
-                className="w-9 h-9 sm:w-11 sm:h-11 object-contain filter drop-shadow-sm" 
+                alt="GDT Inventory Logo" 
+                className="w-8 h-8 sm:w-10 sm:h-10 object-contain" 
+                onError={(e) => {
+                  (e.target as HTMLImageElement).src = '/Logo_Stock_1.png';
+                }}
                 referrerPolicy="no-referrer" 
               />
             </div>
