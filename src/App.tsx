@@ -230,7 +230,7 @@ export default function App() {
         <div className="max-w-full xl:max-w-[1650px] mx-auto px-3 sm:px-4 md:px-8 xl:px-10 py-2.5 sm:py-3.5 flex items-center justify-between gap-2">
           
           {/* Logo & Khmer Title */}
-          <div className="flex items-center gap-2 sm:gap-3 min-w-0">
+          <div className="flex items-center gap-2.5 sm:gap-3.5 min-w-0">
             <button
               onClick={() => setSidebarOpen(!sidebarOpen)}
               className="lg:hidden p-1.5 hover:bg-slate-800 rounded-lg transition-colors flex-shrink-0 text-slate-300"
@@ -238,12 +238,14 @@ export default function App() {
             >
               <Menu className="w-5 h-5 sm:w-6 sm:h-6" />
             </button>
-            <img 
-              src="/Logo_Stock_2.png" 
-              alt="GDT Logo" 
-              className="w-8 h-8 sm:w-10 sm:h-10 object-contain flex-shrink-0" 
-              referrerPolicy="no-referrer" 
-            />
+            <div className="bg-white/10 p-1.5 rounded-xl border border-white/20 shadow-xs flex-shrink-0 flex items-center justify-center">
+              <img 
+                src="/Logo_Stock_2.png" 
+                alt="Logo_Stock_2" 
+                className="w-9 h-9 sm:w-11 sm:h-11 object-contain filter drop-shadow-sm" 
+                referrerPolicy="no-referrer" 
+              />
+            </div>
             <div className="min-w-0 flex flex-col justify-center">
               {language === 'kh' ? (
                 <h1 className="text-xs sm:text-base font-bold text-accent tracking-wide leading-tight">
